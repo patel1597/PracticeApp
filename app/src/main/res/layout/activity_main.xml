@@ -11,7 +11,7 @@
         android:id="@+id/button"
         android:layout_width="@dimen/buttonWidth"
         android:layout_height="@dimen/buttonHeight"
-        android:backgroundTintMode="@color/primaryColor"
+        android:backgroundTint="@color/primaryColor"
         android:text="Click here for regular message"
         android:textColor="@color/secondaryLightColor"
         android:textSize="@dimen/smallFontSize"
@@ -20,49 +20,65 @@
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56" />
+        app:layout_constraintVertical_bias="0.514" />
 
     <TextView
         android:id="@+id/textView"
+        style="@style/TextViewCustom"
         android:layout_width="@dimen/textViewWidth"
         android:layout_height="@dimen/textViewHeight"
         android:text="TextView"
-        android:textColor="@color/primaryDarkColor"
         android:textSize="@dimen/fontSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818" />
+        app:layout_constraintVertical_bias="0.799"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
-        android:ems="10"
         android:hint="Enter Name"
         android:inputType="textPersonName"
-        android:textColorHint="@color/primaryDarkColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.274"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="@dimen/buttonWidth"
         android:layout_height="@dimen/buttonHeight"
+        android:backgroundTint="@color/primaryColor"
         android:text="Click Here for pop up message"
-        android:textSize="@dimen/smallFontSize"
         android:textColor="@color/secondaryLightColor"
+        android:textSize="@dimen/smallFontSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562" />
+        app:layout_constraintVertical_bias="0.514" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextViewCustom"
+        android:layout_width="@dimen/textViewWidth"
+        android:layout_height="@dimen/textViewHeight"
+        android:text="WELCOME"
+        android:textSize="@dimen/largeFontSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
