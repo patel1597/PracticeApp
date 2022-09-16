@@ -12,18 +12,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="editTextStyle">@style/EditTextTest</item>
-        <item name="android:textViewStyle">@style/TextViewCustom</item>
+        <item name="editTextStyle">@style/EditText</item>
     </style>
 
-    <style name="EditTextTest" parent="android:Widget.EditText">
+    <style name="EditText" parent="android:Widget.EditText">
         <item name="android:background">@color/secondaryDarkColor</item>
         <item name="android:textColorHint">@color/secondaryLightColor</item>
     </style>
 
-    <style name="TextViewCustom" parent="android:Widget.TextView">
-        <item name="android:background">@color/primaryDarkColor</item>
-        <item name="android:textColor">@color/primaryLightColor</item>
-    </style>
+
 
 </resources>

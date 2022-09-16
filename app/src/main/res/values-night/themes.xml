@@ -10,7 +10,17 @@
         <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
         <item name="colorOnSecondary">@color/secondaryDarkColor</item>
         <!-- Status bar color. -->
+        <item name="editTextStyle">@style/EditText</item>
+
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="EditText" parent="android:Widget.EditText">
+        <item name="android:background">@color/primaryDarkColor</item>
+        <item name="android:textColorHint">@color/secondaryLightColor</item>
+    </style>
+
 </resources>
+
+
+

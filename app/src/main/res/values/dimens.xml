@@ -9,4 +9,5 @@
     <dimen name="fontSize">20sp</dimen>
     <dimen name="smallFontSize">12sp</dimen>
     <dimen name="largeFontSize">30sp</dimen>
+    <dimen name="margin">15dp</dimen>
 </resources>
