@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:id="@+id/activity_main"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tools:context="com.example.practiceapp.MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="@dimen/buttonWidth"
-        android:layout_height="@dimen/buttonHeight"
-        android:backgroundTint="@color/primaryDarkColor"
-        android:text="Click here for regular message"
-        android:textColor="@color/secondaryColor"
-        android:textSize="@dimen/smallFontSize"
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextViewStyle"
+        android:layout_width="@dimen/textViewWidth"
+        android:layout_height="@dimen/textViewHeight"
+        android:textSize="@dimen/largeFontSize"
+        android:layout_margin="@dimen/layout_margin"
+        android:paddingTop="@dimen/paddingTextViewTop"
+        android:paddingBottom="@dimen/paddingTextViewBottom"
+        android:paddingLeft="@dimen/paddingTextViewLeft"
+        android:paddingRight="@dimen/paddingTextViewRight"
+        android:layout_gravity="center_horizontal"
+        android:text="WELCOME"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853" />
+        app:layout_constraintVertical_bias="0.146"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         style="@style/EditText"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
-        android:gravity="center"
+        android:textSize="@dimen/fontSize"
+        android:layout_margin="@dimen/layout_margin"
+        android:paddingTop="@dimen/paddingEditTextTop"
+        android:paddingBottom="@dimen/paddingEditTextBottom"
+        android:paddingLeft="@dimen/paddingEditTextLeft"
+        android:paddingRight="@dimen/paddingEditTextRight"
+        android:layout_gravity="center_horizontal"
         android:hint="Enter Name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,17 +49,19 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361"
+        app:layout_constraintVertical_bias="0.356"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button2"
+        style="@style/ButtonStyle"
         android:layout_width="@dimen/buttonWidth"
         android:layout_height="@dimen/buttonHeight"
-        android:backgroundTint="@color/primaryDarkColor"
-        android:text="Click Here for pop up message"
-        android:textColor="@color/secondaryColor"
         android:textSize="@dimen/smallFontSize"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_gravity="center_horizontal"
+        android:text="Click Here for pop up message"
+        android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -52,20 +69,40 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.602" />
 
+    <Button
+        android:id="@+id/button"
+        style="@style/ButtonStyle"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
+        android:textSize="@dimen/smallFontSize"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_gravity="center_horizontal"
+        android:text="Click here for regular message"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
+        style="@style/TextViewStyle"
         android:layout_width="@dimen/textViewWidth"
         android:layout_height="@dimen/textViewHeight"
+        android:textSize="@dimen/fontSize"
+        android:layout_margin="@dimen/layout_margin"
         android:gravity="center"
-        android:text="WELCOME"
-        android:textColor="@color/primaryColor"
-        android:textSize="@dimen/largeFontSize"
+        android:layout_gravity="center_horizontal"
+        android:text="Click the second button for the message to show up"
+        android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.124"
+        app:layout_constraintVertical_bias="0.146"
         tools:ignore="TextContrastCheck" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

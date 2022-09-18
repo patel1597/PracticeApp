@@ -9,5 +9,13 @@
     <dimen name="fontSize">20sp</dimen>
     <dimen name="smallFontSize">12sp</dimen>
     <dimen name="largeFontSize">30sp</dimen>
-    <dimen name="margin">15dp</dimen>
+    <dimen name="layout_margin">30dp</dimen>
+    <dimen name="paddingTextViewLeft">78dp</dimen>
+    <dimen name="paddingTextViewRight">78dp</dimen>
+    <dimen name="paddingTextViewTop">5dp</dimen>
+    <dimen name="paddingTextViewBottom">5dp</dimen>
+    <dimen name="paddingEditTextLeft">98dp</dimen>
+    <dimen name="paddingEditTextRight">98dp</dimen>
+    <dimen name="paddingEditTextTop">5dp</dimen>
+    <dimen name="paddingEditTextBottom">5dp</dimen>
 </resources>
